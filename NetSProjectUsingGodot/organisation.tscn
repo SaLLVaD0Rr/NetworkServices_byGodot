@@ -1,0 +1,364 @@
+[gd_scene load_steps=16 format=3 uid="uid://cbo6sq1aju4mf"]
+
+[ext_resource type="Script" path="res://organisation.gd" id="1_mpdfy"]
+[ext_resource type="FontFile" uid="uid://cbw141v74acd0" path="res://Gilroy-Light.otf" id="2_ruwn3"]
+[ext_resource type="Texture2D" uid="uid://b1khjxly5sfnl" path="res://pictures/icons8-return-100.png" id="3_oy70d"]
+[ext_resource type="Texture2D" uid="uid://bbx6kuw45qhp0" path="res://pictures/icons8-start-30.png" id="4_s62nb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vs557"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_alkfk"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.988235, 1, 1, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+expand_margin_left = 5.0
+expand_margin_top = 3.0
+expand_margin_right = 15.0
+expand_margin_bottom = 3.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hohsi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sa10t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kg3ku"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jvisi"]
+bg_color = Color(0.505882, 0.494118, 0.603922, 0.243137)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 5
+shadow_offset = Vector2(0, 2)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tlt4f"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lko0r"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.988235, 1, 1, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+expand_margin_left = 5.0
+expand_margin_top = 3.0
+expand_margin_right = 15.0
+expand_margin_bottom = 3.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3312q"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bu1u4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kgp3o"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mpdfy")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0588235, 0.101961, 0.14902, 1)
+
+[node name="Back" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 49.0
+offset_top = 231.0
+offset_right = 332.0
+offset_bottom = 331.0
+grow_vertical = 2
+scale = Vector2(0.6, 0.6)
+theme_override_colors/font_color = Color(0.988235, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_ruwn3")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vs557")
+theme_override_styles/hover = SubResource("StyleBoxFlat_alkfk")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_hohsi")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_sa10t")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_kg3ku")
+text = "Back
+"
+icon = ExtResource("3_oy70d")
+
+[node name="Image_resize2" type="Node" parent="."]
+
+[node name="Panel" type="Panel" parent="Image_resize2"]
+offset_left = 37.0
+offset_top = 73.0
+offset_right = 248.0
+offset_bottom = 253.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_jvisi")
+
+[node name="image_desc" type="RichTextLabel" parent="Image_resize2"]
+offset_left = 47.0
+offset_top = 90.0
+offset_right = 239.0
+offset_bottom = 206.0
+theme_override_font_sizes/normal_font_size = 17
+text = "This Script Can Resize Images To Desired Resolution in bulk"
+
+[node name="image_title" type="RichTextLabel" parent="Image_resize2"]
+offset_left = 46.0
+offset_top = 49.0
+offset_right = 225.0
+offset_bottom = 77.0
+text = "Image Resizer"
+
+[node name="Launch_image" type="Button" parent="Image_resize2"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -482.0
+offset_top = -107.0
+offset_right = -315.0
+offset_bottom = -59.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.6, 0.6)
+theme_override_colors/font_color = Color(0.988235, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_ruwn3")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxEmpty_tlt4f")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lko0r")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_3312q")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_bu1u4")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_kgp3o")
+text = "Launch
+"
+icon = ExtResource("4_s62nb")
+icon_alignment = 2
+
+[node name="fiile_org" type="Node" parent="."]
+
+[node name="Panel" type="Panel" parent="fiile_org"]
+offset_left = 318.0
+offset_top = 73.0
+offset_right = 529.0
+offset_bottom = 253.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_jvisi")
+
+[node name="file_desc" type="RichTextLabel" parent="fiile_org"]
+offset_left = 328.0
+offset_top = 90.0
+offset_right = 520.0
+offset_bottom = 206.0
+theme_override_font_sizes/normal_font_size = 17
+text = "This Script Can Organize files in a folder by file type"
+
+[node name="file_title" type="RichTextLabel" parent="fiile_org"]
+offset_left = 327.0
+offset_top = 49.0
+offset_right = 506.0
+offset_bottom = 77.0
+theme_override_font_sizes/normal_font_size = 0
+text = "File Organizer"
+
+[node name="Launch_file" type="Button" parent="fiile_org"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -201.0
+offset_top = -107.0
+offset_right = -34.0
+offset_bottom = -59.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.6, 0.6)
+theme_override_colors/font_color = Color(0.988235, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_ruwn3")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxEmpty_tlt4f")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lko0r")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_3312q")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_bu1u4")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_kgp3o")
+text = "Launch
+"
+icon = ExtResource("4_s62nb")
+icon_alignment = 2
+
+[node name="Deduplicator" type="Node" parent="."]
+
+[node name="Panel" type="Panel" parent="Deduplicator"]
+offset_left = 608.0
+offset_top = 73.0
+offset_right = 819.0
+offset_bottom = 253.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_jvisi")
+
+[node name="dedup_desc" type="RichTextLabel" parent="Deduplicator"]
+offset_left = 618.0
+offset_top = 90.0
+offset_right = 810.0
+offset_bottom = 206.0
+theme_override_font_sizes/normal_font_size = 17
+text = "This Script Can Remove Duplicated Files in a path"
+
+[node name="dedup_title" type="RichTextLabel" parent="Deduplicator"]
+offset_left = 617.0
+offset_top = 49.0
+offset_right = 796.0
+offset_bottom = 77.0
+text = "Deduplicator"
+
+[node name="Launch_dedup" type="Button" parent="Deduplicator"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 89.0
+offset_top = -107.0
+offset_right = 256.0
+offset_bottom = -59.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.6, 0.6)
+theme_override_colors/font_color = Color(0.988235, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_ruwn3")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxEmpty_tlt4f")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lko0r")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_3312q")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_bu1u4")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_kgp3o")
+text = "Launch
+"
+icon = ExtResource("4_s62nb")
+icon_alignment = 2
+
+[node name="Website_status" type="Node" parent="."]
+
+[node name="Panel" type="Panel" parent="Website_status"]
+offset_left = 894.0
+offset_top = 73.0
+offset_right = 1105.0
+offset_bottom = 253.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_jvisi")
+
+[node name="Web_desc" type="RichTextLabel" parent="Website_status"]
+offset_left = 904.0
+offset_top = 90.0
+offset_right = 1096.0
+offset_bottom = 206.0
+theme_override_font_sizes/normal_font_size = 17
+text = "This Script helps check a Website's status"
+
+[node name="web_title" type="RichTextLabel" parent="Website_status"]
+offset_left = 903.0
+offset_top = 49.0
+offset_right = 1082.0
+offset_bottom = 77.0
+text = "Website Checker
+"
+
+[node name="Launch_web" type="Button" parent="Website_status"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 375.0
+offset_top = -107.0
+offset_right = 542.0
+offset_bottom = -59.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.6, 0.6)
+theme_override_colors/font_color = Color(0.988235, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_ruwn3")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxEmpty_tlt4f")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lko0r")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_3312q")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_bu1u4")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_kgp3o")
+text = "Launch
+"
+icon = ExtResource("4_s62nb")
+icon_alignment = 2
+
+[node name="Pass" type="Node" parent="."]
+
+[node name="Panel" type="Panel" parent="Pass"]
+offset_left = 462.0
+offset_top = 352.0
+offset_right = 673.0
+offset_bottom = 532.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_jvisi")
+
+[node name="pass_desc" type="RichTextLabel" parent="Pass"]
+offset_left = 472.0
+offset_top = 369.0
+offset_right = 664.0
+offset_bottom = 485.0
+theme_override_font_sizes/normal_font_size = 17
+text = "This Script Generates A Password And stores it in a text file"
+
+[node name="Pass_title" type="RichTextLabel" parent="Pass"]
+offset_left = 471.0
+offset_top = 328.0
+offset_right = 650.0
+offset_bottom = 356.0
+text = "Password generator
+"
+
+[node name="Launch_Pass" type="Button" parent="Pass"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -57.0
+offset_top = 172.0
+offset_right = 110.0
+offset_bottom = 220.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.6, 0.6)
+theme_override_colors/font_color = Color(0.988235, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_ruwn3")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxEmpty_tlt4f")
+theme_override_styles/hover = SubResource("StyleBoxFlat_lko0r")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_3312q")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_bu1u4")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_kgp3o")
+text = "Launch
+"
+icon = ExtResource("4_s62nb")
+icon_alignment = 2
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="Image_resize2/Launch_image" to="." method="_on_launch_image_pressed"]
+[connection signal="pressed" from="fiile_org/Launch_file" to="." method="_on_launch_file_pressed"]
+[connection signal="pressed" from="Deduplicator/Launch_dedup" to="." method="_on_launch_dedup_pressed"]
+[connection signal="pressed" from="Website_status/Launch_web" to="." method="_on_launch_web_pressed"]
+[connection signal="pressed" from="Pass/Launch_Pass" to="." method="_on_launch_pass_pressed"]
