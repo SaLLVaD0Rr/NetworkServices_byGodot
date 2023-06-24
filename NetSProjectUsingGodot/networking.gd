@@ -2,11 +2,10 @@ extends Control
 
 
 
-
-var interpret_path = ProjectSettings.globalize_path("res://Pythonfiles/venv/Scripts/python.exe")
+var interpret_path = ProjectSettings.globalize_path("res://Pythonfiles/cripts/venv/Scripts/python.exe")
 var nmap_path = ProjectSettings.globalize_path("res://Pythonfiles/cripts/launch_nmap.py")
 var lanscan_path = ProjectSettings.globalize_path("res://Pythonfiles/cripts/launch_lanscan.py")
-var nslook_path = ProjectSettings.globalize_path("res://Pythonfiles/ripts/launch_nslook.py")
+var nslook_path = ProjectSettings.globalize_path("res://Pythonfiles/cripts/launch_nslook.py")
 var renew_path = ProjectSettings.globalize_path("res://Pythonfiles/cripts/launch_renew.py")
 var qr_path =ProjectSettings.globalize_path("res://Pythonfiles/cripts/launch_qr.py")
 var pass_path = ProjectSettings.globalize_path("res://Pythonfiles/cripts/launch_wifi_pass.py")

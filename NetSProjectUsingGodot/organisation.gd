@@ -3,9 +3,9 @@ extends Control
 
 var DIR = OS.get_executable_path().get_base_dir()
 
-var interpret_path = ProjectSettings.globalize_path("res://Pythonfiles/venv/Scripts/python.exe")
+var interpret_path = ProjectSettings.globalize_path("res://Pythonfiles/cripts/venv/Scripts/python.exe")
 var image_path = ProjectSettings.globalize_path("res://Pythonfiles/cripts/launch_images.py")
-var file_path = ProjectSettings.globalize_path("res://Pythonfiles/ripts/launch_organize.py")
+var file_path = ProjectSettings.globalize_path("res://Pythonfiles/cripts/launch_organize.py")
 var dedup_path = ProjectSettings.globalize_path("res://Pythonfiles/cripts/launch_dedup.py")
 var website_path = ProjectSettings.globalize_path("res://Pythonfiles/cripts/launch_web_avail.py")
 var pass_path = ProjectSettings.globalize_path("res://Pythonfiles/cripts/launch_generate.py")

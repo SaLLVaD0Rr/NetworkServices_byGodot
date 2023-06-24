@@ -33,3 +33,4 @@ while True:
 # If a valid ip address range was supplied the program will return 
 # the list of all results.
 arp_result = scapy.arping(ip_add_range_entered)
+x = input("PRESS ENTER TO END THE PROCESS = ")
